@@ -8,7 +8,7 @@ var albumSchema = schema({
     description: String,
     year: Number,
     image: String,
-    artist: { type: Schema.ObjectId, ref: 'artist'}
+    artist: { type: Schema.ObjectId, ref: 'artist_'}
 });
 
-module.exports = moongose.model('album', albumSchema);
+module.exports = moongose.model('album_', albumSchema);

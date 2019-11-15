@@ -6,6 +6,7 @@ var app = require('./app');//Ruta fichero app
 var port = process.env.PORT || 3977;
 
 //usa el servicio de mongoose para conectar mongoDB al proyecto 
+//mongoose.Promise = global.Promise; (AVERIGUAR FUNCION)
 mongoose.connect('mongodb://localhost:27017/curso_mean2',{useNewUrlParser: true,useUnifiedTopology:true },
 (err, res) =>{
                     if(err){
